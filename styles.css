@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(17, 17, 17);
+}
+
+.button {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 50px;
+  border: 3px solid #3c67e3;
+  border-radius: 10px;
+
+  background-color: transparent;
+}
+
+.button:hover {
+  animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow:
+      0 0 25px #5ddcff,
+      0 0 50px #4e00c2;
+
+    text-shadow:
+      0 0 3px #5ddcff,
+      0 0 3px #4e00c2;
+
+    color: #7fd899;
+  }
+}
